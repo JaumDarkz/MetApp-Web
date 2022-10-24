@@ -55,6 +55,11 @@
             background: var(--background);
             padding: 10px 25px;
             border-radius: 8px;
+            transition: 0.3s;
+
+            &:hover {
+              background: transparent;
+            }
           }
         }
 
