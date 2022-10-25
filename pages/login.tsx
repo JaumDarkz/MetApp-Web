@@ -1,10 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import NavBar from '../components/NavBar'
-import LandingPage from '../components/LandingPage'
+import LoginComponent from '../components/Login'
 
-const Home: NextPage = () => {
+const Login: NextPage = () => {
   return (
     <>
       <Head>
@@ -13,10 +12,9 @@ const Home: NextPage = () => {
         <link rel='icon' href='../public/icon.png' />
       </Head>
       
-      <NavBar />
-      <LandingPage />
+      <LoginComponent />
     </>
   )
 }
 
-export default Home
+export default Login
