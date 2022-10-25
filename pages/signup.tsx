@@ -1,20 +1,20 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import LoginComponent from '../components/Login'
+import SignUpComponent from '../components/SignUp'
 
-const Login: NextPage = () => {
+const SignUp: NextPage = () => {
   return (
     <>
       <Head>
         <title>MetApp</title>
         <meta name='description' content='Manage your nfts!' />
-        <link rel='icon' href='../public/icon.png' />
+        <link rel='icon' type="image/png" href='../public/icon.png' />
       </Head>
       
-      <LoginComponent />
+      <SignUpComponent />
     </>
   )
 }
 
-export default Login
+export default SignUp

@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: center;
   background-color: var(--background);
-  background-image: url('./assets/background.svg');
+  background-image: url('../Login/assets/background.svg');
   background-size: cover;
 
   .columnContainer {
@@ -93,26 +93,6 @@
         }
       }
 
-      .checkContainer {
-        display: flex;
-        flex-direction: row;
-        color: #515151;
-        margin-bottom: 40px;
-
-        .checkBoxContainer {
-          cursor: pointer;
-          transition: 0.5s;
-
-          &:hover {
-            filter: brightness(150%);
-          }
-        }
-
-        .text {
-          margin-left: 10px;
-        }
-      }
-
       .buttonContainer {
         cursor: pointer;
         background: linear-gradient(rgba(106, 45, 177, 1), rgba(71, 17, 227, 1));
@@ -133,23 +113,7 @@
         }
       }
 
-      .centerForgot {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        
-        .forgot {
-          color: #515151;
-
-          &:hover {
-            cursor: pointer;
-            color: white;
-            text-decoration: underline;
-          }
-        }
-      }
-
-      .registerContainer {
+      .loginContainer {
         color: #515151;
         text-align: center;
 

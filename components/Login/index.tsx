@@ -17,7 +17,7 @@ const LoginComponent = () => {
     <div className={styles.container}>
       <div className={styles.columnContainer}>
         <div className={styles.logoContainer}>
-          <div className={styles.centerContainer}>
+          <div className={styles.centerContainer} onClick={() => window.open('/', '_self')}>
             <Image src={logo} alt='Logo' />
           </div>
         </div>
@@ -61,7 +61,7 @@ const LoginComponent = () => {
           </div>
 
           <div className={styles.registerContainer}>
-            You don&apos;t have an account? <span>Sign up</span>
+            You don&apos;t have an account? <span onClick={() => window.open('/signup', '_self')}>Sign up</span>
           </div>
         </div>
       </div>
