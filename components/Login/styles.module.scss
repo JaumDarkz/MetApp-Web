@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 50px;
 
     .logoContainer {
       border-radius: 100px;
@@ -118,12 +119,13 @@
         background: linear-gradient(rgba(106, 45, 177, 1), rgba(71, 17, 227, 1));
         padding: 1px;
         border-radius: 10px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
 
         .button {
           text-align: center;
+          font-size: 18px;
           background-color: var(--background);
-          padding: 10px 0px;
+          padding: 14px 0px;
           border-radius: 10px;
           transition: 0.3s;
 
@@ -136,6 +138,7 @@
       .centerForgot {
         display: flex;
         justify-content: center;
+        margin-top: 40px;
         margin-bottom: 20px;
         
         .forgot {

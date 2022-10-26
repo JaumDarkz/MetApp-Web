@@ -8,6 +8,7 @@ import eye from './assets/eye.svg'
 import noneye from './assets/noneye.svg'
 import markedsvg from './assets/marked.svg'
 import nonmarkedsvg from './assets/nonmarked.svg'
+import DataNotMatch from './errors/DataNotMatch'
 
 const LoginComponent = () => {
   const [passVisible, setPassVisible] = useState(false)
@@ -53,6 +54,8 @@ const LoginComponent = () => {
               Log in
             </div>
           </div>
+
+          <DataNotMatch />
 
           <div className={styles.centerForgot}>
             <div className={styles.forgot}>

@@ -6,12 +6,13 @@ import styles from './styles.module.scss'
 import logo from '../Login/assets/logo.svg'
 import eye from '../Login/assets/eye.svg'
 import noneye from '../Login/assets/noneye.svg'
-import markedsvg from '../Login/assets/marked.svg'
-import nonmarkedsvg from '../Login/assets/nonmarked.svg'
+
+import EmailFormat from './errors/EmailFormat'
+import InvalidEmail from './errors/InvalidEmail'
+import PasswordNotMatch from './errors/PasswordNotMatch'
 
 const SignUpComponent = () => {
   const [passVisible, setPassVisible] = useState(false)
-  const [marked, setMarked] = useState(false)
   const [confirmation, setConfirmation] = useState(false)
 
   return (
@@ -57,6 +58,10 @@ const SignUpComponent = () => {
             Sign up
           </div>
         </div>
+
+        <EmailFormat />
+        <InvalidEmail />
+        <PasswordNotMatch />
 
         <div className={styles.loginContainer}>
           Already have an account? <span onClick={() => window.open('/login', '_self')}>Login</span>
