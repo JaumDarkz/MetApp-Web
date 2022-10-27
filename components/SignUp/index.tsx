@@ -25,6 +25,12 @@ const SignUpComponent = () => {
       </div>
 
       <div className={styles.formContainer}>
+        <div className={styles.nameContainer}>
+          <div>Name</div>
+          <input type="text" className={styles.nameInput} />
+          <div className={styles.line}/>
+        </div>
+        
         <div className={styles.emailContainer}>
           <div>Email</div>
           <input type="text" className={styles.emailInput} />
@@ -58,10 +64,6 @@ const SignUpComponent = () => {
             Sign up
           </div>
         </div>
-
-        <EmailFormat />
-        <InvalidEmail />
-        <PasswordNotMatch />
 
         <div className={styles.loginContainer}>
           Already have an account? <span onClick={() => window.open('/login', '_self')}>Login</span>

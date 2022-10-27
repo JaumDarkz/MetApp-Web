@@ -20,7 +20,7 @@ const Gallery = () => {
           <Card title='Bored Ape #4372' image={test2} network='polygon' />
           <Card title='Bored Ape #4372' image={test2} network='ethereum' />
           <Card title='Bored Ape #4372' image={test2} network='polygon' />
-          <Card title='Bored Ape #4372' image={test2} network='ethereum' />
+          <Card title='Bored Ape #4372' image={test2}  network='ethereum' />
           <Card title='Bored Ape #4372' image={test2} network='polygon'/>
           <Card title='Bored Ape #4372' image={test2} network='polygon'/>
         </div>
