@@ -7,8 +7,6 @@ import { AuthContext } from '../contexts/auth'
 import SignUpComponent from '../components/SignUp'
 
 const SignUp: NextPage = () => {
- 
-
   return (
     <>
       <Head>

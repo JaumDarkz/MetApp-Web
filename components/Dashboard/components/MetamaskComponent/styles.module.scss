@@ -1,9 +1,10 @@
 .container {
-  width: calc(100vw - 200px);
+  width: calc(100vw + 200px);
   height: 100vh;
   display: flex;
   justify-content: center;
   margin-left: -27px;
+  background-color: #111111;
 
   .columnContainer {
     display: flex;

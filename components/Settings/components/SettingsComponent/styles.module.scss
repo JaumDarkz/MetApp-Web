@@ -58,6 +58,97 @@
             margin-bottom: 15px;
           }
         }
+
+        .dataContainerButton {
+          display: flex;
+          flex-direction: column;
+
+          .rowContainer {
+            display: flex;
+            justify-content: space-between;
+
+            .leftSide {
+              width: 70%;
+              
+              .label {
+                color: #515151;
+                font-size: 14px;
+              }
+
+              .data {
+                margin: 5px 0px 5px 5px;
+              }
+            }
+            
+            .rightSide {
+              width: 30%;
+              display: flex;
+              align-items: center;
+              
+              .buttonContainer {
+                width: 100%;
+                background: linear-gradient(rgba(106, 45, 177, 1), rgba(71, 17, 227, 1));
+                padding: 1px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+
+                .button {
+                  text-align: center;
+                  background: #111111;
+                  padding: 10px 0px;
+                  border-radius: 10px;
+                  transition: 0.5s;
+
+                  &:hover {
+                    cursor: pointer;
+                    background: transparent;
+                  }
+                }
+              }
+            }
+          }
+
+          .line {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(rgba(25, 25, 25, 0), rgba(25, 25, 25, 1), rgba(25, 25, 25, 1), rgba(25, 25, 25, 0));
+            margin-bottom: 15px;
+          }
+        }
+
+        .accountOptionsContainer {
+          display: flex;
+          justify-content: space-between;
+
+          .closeAccount {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: red;
+            font-size: 14px;
+          }
+
+          .saveButtonContainer {
+            width: 30%;
+            background: linear-gradient(rgba(106, 45, 177, 1), rgba(71, 17, 227, 1));
+            padding: 1px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+            .button {
+              text-align: center;
+              background: #111111;
+              padding: 10px 0px;
+              border-radius: 10px;
+              transition: 0.5s;
+
+              &:hover {
+                cursor: pointer;
+                background: transparent;
+              }
+            }
+          }
+        }
       }
     }
   }
