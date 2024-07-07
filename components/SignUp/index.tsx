@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { EventHandler, useState } from 'react'
 
 import styles from './styles.module.scss'
 
@@ -12,17 +12,15 @@ import InvalidEmail from './errors/InvalidEmail'
 import PasswordNotMatch from './errors/PasswordNotMatch'
 
 const SignUpComponent = () => {
-  // Options
   const [passVisible, setPassVisible] = useState(false)
   const [confirmation, setConfirmation] = useState(false)
 
-  // Storing data to states
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault()
 
     console.log('submit')
